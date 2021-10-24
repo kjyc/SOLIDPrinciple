@@ -1,13 +1,25 @@
 package ocp;
 
-public class NeuroMuscularSymptom {
-	
+public class NeuroMuscularSymptom implements ISymptom {
+
+	private String name;
 	private int covidImpact;
 	private int severityIndex;
+	private int affectedDays;
 
-	public NeuroMuscularSymptom(int covidImpact, int severityIndex) {
+	public NeuroMuscularSymptom(String name, int covidImpact, int severityIndex, int affectedDays) {
+		this.name = name;
 		this.covidImpact = covidImpact;
 		this.severityIndex = severityIndex;
+		this.affectedDays = affectedDays;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public int getCovidImpact() {
@@ -24,6 +36,14 @@ public class NeuroMuscularSymptom {
 
 	public void setSeverityIndex(int severityIndex) {
 		this.severityIndex = severityIndex;
+	}
+
+	public int getAffectedDays() {
+		return affectedDays;
+	}
+
+	public void setAffectedDays(int affectedDays) {
+		this.affectedDays = affectedDays;
 	}
 
 }

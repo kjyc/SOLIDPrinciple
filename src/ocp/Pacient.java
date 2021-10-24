@@ -1,11 +1,11 @@
 package ocp;
 
 public class Pacient {
-	
+
 	private String name;
 	private int age;
 	private boolean isAlergic;
-	
+
 	public Pacient(String name, int age, boolean isAlergic) {
 		this.name = name;
 		this.age = age;
@@ -35,5 +35,5 @@ public class Pacient {
 	public void setAlergic(boolean isAlergic) {
 		this.isAlergic = isAlergic;
 	}
-	
+
 }
