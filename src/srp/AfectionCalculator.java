@@ -4,11 +4,11 @@ import java.util.Map;
 
 public class AfectionCalculator {
 
-	public double calculateAfection(Map<ISymptom, Integer> symptoms) {
+	public double calculateAfection(Map<Symptom, Integer> symptoms) {
 		double afection = 0;
 		int elems = 1;
 
-		for (ISymptom s : symptoms.keySet()) {
+		for (Symptom s : symptoms.keySet()) {
 			if (s.getCovidImpact() > 50) {
 				afection = afection + s.getSeverityIndex() * symptoms.get(s);
 				elems++;

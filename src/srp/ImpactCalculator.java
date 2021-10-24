@@ -7,7 +7,7 @@ public class ImpactCalculator {
 	private AfectionCalculator ac = new AfectionCalculator();
 	private IncrementCalculator ic = new IncrementCalculator();
 
-	public double calculateImpact(Map<ISymptom, Integer> symptoms, int age) {
+	public double calculateImpact(Map<Symptom, Integer> symptoms, int age) {
 		double impact;
 
 		if (age < 10) {

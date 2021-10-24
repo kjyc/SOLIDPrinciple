@@ -5,9 +5,9 @@ public class Main {
 	public static void main(String[] args) {
 		Covid19Pacient cp = new Covid19Pacient("Juan", 53, false);
 
-		ISymptom c = new CardioVascularSymptom("Dolor pecho", 34, 3, 5);
-		ISymptom r = new RespiratorySymptom("Silvido", 56, 5, 2);
-		ISymptom n = new NeuroMuscularSymptom("Dificultad Hablar", 78, 5, 10);
+		Symptom c = new CardioVascularSymptom("Dolor pecho", 34, 3, 5);
+		Symptom r = new RespiratorySymptom("Silvido", 56, 5, 2);
+		Symptom n = new NeuroMuscularSymptom("Dificultad Hablar", 78, 5, 10);
 
 		cp.addSymptom(c, 3);
 		cp.addSymptom(r, 2);
